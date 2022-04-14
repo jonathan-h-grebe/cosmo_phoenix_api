@@ -1,4 +1,4 @@
-defmodule Cosmo.CrowdStat do
+defmodule Cosmo.Info.CrowdStat do
   use Ecto.Schema
 
   schema "crowd_stats" do
@@ -14,11 +14,11 @@ defmodule Cosmo.CrowdStat do
     field(:residence_cards_called, :string)
     field(:residence_cards_waiting, :string)
 
-    field(:consultations_cards_calling, :string)
+    field(:consultations_calling, :string)
     field(:consultations_called, :string)
     field(:consultations_waiting, :string)
 
-    field(:permanent_residences_cards_calling, :string)
+    field(:permanent_residences_calling, :string)
     field(:permanent_residences_called, :string)
     field(:permanent_residences_waiting, :string)
 
@@ -28,5 +28,4 @@ defmodule Cosmo.CrowdStat do
 
     timestamps()
   end
-
 end

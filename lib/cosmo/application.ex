@@ -11,7 +11,8 @@ defmodule Cosmo.Application do
       # Start the Ecto repository
       Cosmo.Repo,
       # Start the endpoint when the application starts
-      CosmoWeb.Endpoint
+      CosmoWeb.Endpoint,
+      {Phoenix.PubSub, [name: Cosmo.PubSub, adapter: Phoenix.PubSub.PG2]}
       # Starts a worker by calling: Cosmo.Worker.start_link(arg)
       # {Cosmo.Worker, arg},
     ]

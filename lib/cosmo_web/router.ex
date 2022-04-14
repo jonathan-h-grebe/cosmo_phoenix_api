@@ -20,7 +20,8 @@ defmodule CosmoWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", CosmoWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", CosmoWeb do
+    pipe_through :api
+    resources "/crowd_stats", CrowdStatController, except: [:new, :edit]
+  end
 end

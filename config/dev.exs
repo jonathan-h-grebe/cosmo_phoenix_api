@@ -1,10 +1,10 @@
-use Mix.Config
+import Config
 
 # Configure your database
 config :cosmo, Cosmo.Repo,
-  username: "postgres",
+  username: "jono",
   password: "Osaka",
-  database: "regular_task_repo",
+  database: "cosmo_square_crowd_info_db",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

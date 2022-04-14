@@ -42,5 +42,8 @@ defmodule CosmoWeb.Endpoint do
     key: "_cosmo_key",
     signing_salt: "Jke+WffP"
 
+  plug Corsica,
+    origins: ["http://localhost:3000"]
+
   plug CosmoWeb.Router
 end
